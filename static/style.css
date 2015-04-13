@@ -1,0 +1,97 @@
+body
+{
+    background-color: #111133;
+}
+
+table
+{
+    empty-cells: show;
+}
+
+td.main_heading
+{
+    padding: 10px;
+    background-color: #333355;
+    text-align: right;
+    height: 100px;
+    border: 1px solid #555555;
+}
+
+td.copyright
+{
+    background-color: #222244;
+    border: 1px solid #555555;
+    text-align: right;
+    padding: 2px;
+}
+
+td.main_link
+{
+    border-left: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    width: 10%;
+    background-color: #222244;
+    padding: 2px 3px 2px 3px;
+    text-align: center;
+}
+
+td.main_space
+{
+    border: 1px solid #555555;
+    border-top: 0px;
+    width: 50%;
+    background-color: #222244;
+}
+
+td.content
+{
+    background-color: #333355;
+    padding: 3px;
+    border-left: 1px solid #555555;
+    border-right: 1px solid #555555;
+}
+
+font.main_heading
+{
+    font-size: 36pt;
+    color: #FFFFFF;
+    font-family: Eurostile , sans-serif;
+    font-style: italic;
+}
+
+font.sub_heading
+{
+    font-size: 14pt;
+    color: #FFFFFF;
+    font-family: Eurostile , sans-serif;
+    position: relative;
+    top: -10px;
+    left: -15px;
+}
+
+font.copyright
+{
+    font-size: 8pt;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+font.content
+{
+    font-size: 9pt;
+    color: #DDDDDD;
+    font-family: sans-serif;
+}
+
+a:link , a:visited , a:active
+{
+    color: #888888;
+    font-size: 10pt;
+}
+
+a:hover
+{
+    color: #666666;
+    font-size: 10pt;
+    text-decoration: none;
+}

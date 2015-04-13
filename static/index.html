@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+    <head>
+        <title>Apple</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+
+    <body>
+
+        <table width="80%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td class="main_heading" colspan="6">
+                    <font class="main_heading">
+                        Apple
+                    </font>
+                    <br />
+                    <font class="sub_heading">
+                        Distintos dispositivos Apple.
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td class="main_link">
+                    <font class="link">
+                        <li><a href="https://www.apple.com/es/ipad/">Caracteristicas iPad</a></li>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <li><a href="https://www.apple.com/es/ipod/">Caracteristicas iPod</a></li>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <li><a href="https://www.apple.com/es/iphone/">Caracteristicas iPhone</a></li>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <li><a href="https://www.apple.com/es/mac/">Caracteristicas mac</a></li>
+                    </font>
+                </td>
+                <td class="main_link">
+                    <font class="link">
+                        <li><a href="https://www.apple.com/es/watch/">Caracteristicas watch</a></li>
+                    </font>
+                </td>
+                <td class="main_space">
+                </td>
+            </tr>
+            <tr>
+                <td class="content" colspan="6">
+                    <font class="content">
+			            <p>{{ contenido }}</p>
+                        <p>{{ salida }}</p>
+                        {% if lista %}
+                            <ul>
+                                {% for fila in lista %}
+                                    <li><a href="annotated/{{ fila.dispositivo }}">{{ fila.dispositivo }}</a></li>
+                                {% endfor %}
+                                <p>{{ salida }}</p>
+                                <li><a href="http://www.apple.com/es/retail/?target=nav/find_a_store">Busca tu Apple Store</a></li>
+                                <li><a href="https://www.apple.com/es/itunes/">iTunes</a></li>
+                                <li><a href="https://www.apple.com/es/support/">Soporte</a></li>
+                                <li><a href="https://www.apple.com/es/">Ir a pagina oficial</a></li>
+                            </ul>
+                        {% endif %}
+                        <p>{{ mensaje }}</p>
+                        <p><a href="{{ administrador }}"> {{ logger }} <a></p>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td class="copyright" colspan="6">
+                    <font class="copyright">
+                        &copy; 2015 A-malagon
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>
